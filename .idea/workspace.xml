@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="384028ad-c619-491e-944a-c6cc8cd70ef6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kCEd6ja49TDPlxcC4FszBfV8oO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="384028ad-c619-491e-944a-c6cc8cd70ef6" name="Default Changelist" comment="" />
+      <created>1605196257681</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605196257681</updated>
+      <workItem from="1605196258846" duration="2513000" />
+      <workItem from="1605205878753" duration="91000" />
+      <workItem from="1605206831446" duration="427000" />
+      <workItem from="1605267870830" duration="708000" />
+      <workItem from="1605275074810" duration="2000" />
+      <workItem from="1605284538797" duration="1975000" />
+      <workItem from="1605292767561" duration="2248000" />
+      <workItem from="1605295433087" duration="286000" />
+      <workItem from="1605458778674" duration="2808000" />
+      <workItem from="1605547581419" duration="609000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1234" y="304" key="NewPhpClassDialog" timestamp="1605196288202">
+      <screen x="-1920" y="23" width="1920" height="1177" />
+    </state>
+    <state x="-1234" y="304" key="NewPhpClassDialog/0.23.1440.825/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1605196288202" />
+    <state x="-1197" y="502" key="NewPhpFileDialog" timestamp="1605196293770">
+      <screen x="-1920" y="23" width="1920" height="1177" />
+    </state>
+    <state x="-1197" y="502" key="NewPhpFileDialog/0.23.1440.825/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1605196293770" />
+    <state x="418" y="24" width="604" height="822" key="find.popup" timestamp="1605198160268">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="418" y="24" width="604" height="822" key="find.popup/0.23.1440.825/-1920.23.1920.1177@0.23.1440.825" timestamp="1605198160268" />
+  </component>
+</project>
