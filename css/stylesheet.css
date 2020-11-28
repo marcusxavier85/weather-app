@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes straight-line {
+    from {transform: translateX(-75px)}
+    to {transform: translateX(1980%)}
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: red;
+    font-family: Verdana;
+}
+
+.background {
+    display: grid;
+    grid-template-columns: 100%;
+    background-image: linear-gradient(to top, navy, lightblue);
+    height: 60vh;
+    justify-content: center;
+    z-index: -10;
+    overflow-x: hidden;
+}
+
+.background svg {
+    animation-name: straight-line;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+
+.big-cloud {
+    animation-name: straight-line;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    z-index: 1;
+}
+
+.city {
+    justify-self: center;
+    text-align: center;
+    align-self: end;
+    z-index: 10;
+}
+
+.todays-information {
+    justify-self: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.future-dates {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    height: 40vh;
+    padding: 0 20%;
+    align-items: center;
+}
+
+.future-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+
+.todays-weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.size {
+    width: 100px;
+    height: 100px;
+}
+
+
+
