@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Weather App</title>
     <link href="css/stylesheet.css" type="text/css" rel="stylesheet">
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <script src="js/index-js.js" defer></script>
+    <link rel="icon" type="image/png" href="http://localhost:1234/Weather-App/favicon.png">
 </head>
 <body>
     <div class="background">
