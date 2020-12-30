@@ -21,7 +21,7 @@ fetch('http://api.openweathermap.org/data/2.5/forecast?q=London,uk&appid=755584e
 
     document.querySelector('.city').innerHTML = data.city.name;
 
-    document.querySelector(".todays-weather").innerHTML = getCurrentDate() + '<br>'  + data.list[0].weather[0].description + '<br>' + Math.round(data.list[0].main.temp) + '°C';
+    document.querySelector(".todays-weather").innerHTML = getCurrentDate() + '<br>'  + data.list[0].weather[0].description + '<br>' + Math.round(data.list[0].main.temp) + '°C' + '<br><i class="wi wi-alien"></i>';
     data.list.shift();
 
     let x = 1;
