@@ -30,10 +30,20 @@ fetch('http://api.openweathermap.org/data/2.5/forecast?q=London,uk&appid=755584e
             let futureDate = new Date();
             let getFutureDateMonth = futureDate.getMonth() + 1;
             if (futureDate.getDate() + x <= 31) {
+                if (futureDate.getDate() + x < 10) {
+                    let lowerDateNumber = '0' + futureDate.getDate() + x;
+                    date.innerHTML = lowerDateNumber + '/' + getFutureDateMonth;
+                }
                 date.innerHTML = futureDate.getDate() + x + '/' + getFutureDateMonth;
             } else {
                 let getNextMonth = getFutureDateMonth + 1;
-                date.innerHTML = futureDate.getDate() + x - 31 + '/' + getNextMonth;
+                if (getNextMonth > 12) {
+                   let nextYearNewMonth = getNextMonth - 12;
+                   date.innerHTML = futureDate.getDate() + x - 31 + '/' + nextYearNewMonth;
+                } else {
+                    date.innerHTML = futureDate.getDate() + x - 31 + '/' + getNextMonth;
+                }
+
             }
             x++;
         }

@@ -3,8 +3,8 @@
 }
 
 @keyframes straight-line {
-    from {transform: translateX(-5vw)}
-    to {transform: translateX(100vw)}
+    from {transform: translateX(-10vw)}
+    to {transform: translateX(120vw)}
 }
 
 @keyframes rotate {
@@ -32,7 +32,7 @@ body {
 .cloud {
     position: absolute;
     z-index: 1;
-    left: -50px;
+    left: -125px;
 }
 
 .small-cloud-one {
@@ -139,10 +139,9 @@ body {
     height: 100px;
 }
 
-/*.todays-weather-icon {*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*}*/
+i {
+    font-size: 5rem;
+}
 
 @media screen and (max-width: 806px) {
     .future-dates {
