@@ -5,6 +5,7 @@ fetch('http://api.openweathermap.org/data/2.5/forecast?q=London,uk&appid=755584e
 
     console.log(data);
     console.log(data.list[0].main.temp);
+    console.log(data.list[0].weather[0].main);
     console.log(data.list[0].weather[0].description);
 
     function getCurrentDate() {
@@ -21,7 +22,32 @@ fetch('http://api.openweathermap.org/data/2.5/forecast?q=London,uk&appid=755584e
 
     document.querySelector('.city').innerHTML = data.city.name;
 
-    document.querySelector(".todays-weather").innerHTML = getCurrentDate() + '<br>'  + data.list[0].weather[0].description + '<br>' + Math.round(data.list[0].main.temp) + '°C' + '<br><i class="wi wi-alien"></i>';
+
+    function getWeatherIcon() {
+        if (data.list[0].weather[0].description === 'thunderstorm') {
+            return '<i class="wi wi-thunderstorm"></i>';
+        } else if (data.list[0].weather[0].description === 'rain') {
+            return '<i class="wi wi-rain"></i>';
+        } else if (data.list[0].weather[0].description === 'shower rain') {
+            return '<i class="wi wi-showers"></i>';
+        } else if (data.list[0].weather[0].description === 'snow') {
+            return '<i class="wi wi-snow"></i>';
+        } else if (data.list[0].weather[0].description === 'clear sky') {
+            return '<i class="wi wi-day-sunny"></i>';
+        } else if (data.list[0].weather[0].description === 'few clouds') {
+            return '<i class="wi wi-cloudy"></i>';
+        } else if (data.list[0].weather[0].description === 'scattered clouds') {
+            return '<i class="wi wi-cloudy"></i>';
+        } else if (data.list[0].weather[0].description === 'few clouds') {
+            return '<i class="wi wi-cloudy"></i>';
+        } else {
+            return '<p>HEY HEY HEY</p>';
+        }
+    }
+
+
+    document.querySelector(".todays-weather-info").innerHTML = getCurrentDate() + '<br>'  + data.list[0].weather[0].description + '<br>' + Math.round(data.list[0].main.temp) + '°C';
+    document.querySelector('.todays-weather-icon').innerHTML = getWeatherIcon();
     data.list.shift();
 
     let x = 1;
@@ -49,8 +75,8 @@ fetch('http://api.openweathermap.org/data/2.5/forecast?q=London,uk&appid=755584e
         }
     })
 
-    document.querySelectorAll('.weather').forEach((items) => {
-        items.innerHTML = data.list[0].weather[0].description + '<br>' + Math.round(data.list[0].main.temp) + '°C';
+    document.querySelectorAll('.future-weather').forEach((items) => {
+        items.innerHTML = '<p>' + data.list[0].weather[0].description +'</p>' + '<p>' + Math.round(data.list[0].main.temp) + '°C' + '</p>' + getWeatherIcon();
         data.list.shift();
     });
 })
